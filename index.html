@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html ng-app="store">
+	<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="application.css" />
+    </head>
+    <body ng-controller="StoreController as store">
+        <div ng-hide="product.soldOut" ng-repeat="product in store.products">
+            <product-Title></product-Title>
+            <button ng-show="product.canPurchase"> Add to Cart </button>
+			<product-panels></product-panels>
+        </div>
+        <script type="text/javascript" src="angular-1.2.19/angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="products.js"></script>
+    </body>
+</html>
