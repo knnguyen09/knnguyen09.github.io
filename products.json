@@ -1,0 +1,78 @@
+[
+	{
+		name: "Dodecahedron",
+		price: 2.00,
+		description: "Bla",
+		canPurchase: true,
+		soldOut: false,
+		images: [
+			{
+				full: 'link1.jpg',
+				thumb: 'link1.jpg'
+			},
+			{
+				full: 'link2.jpg',
+				thumb: 'link2.jpg'
+			},
+			{
+				full: 'link3.jpg',
+				thumb: 'link3.jpg'
+			}
+		],
+		reviews: [
+			{
+				stars:5,
+				body: "LOVE IT!",
+				author: "who@am.I"
+			},
+			{
+				stars:3,
+				body: "WOW!",
+				author: "who@am.I"
+			},
+			{
+				stars:1,
+				body: "What?",
+				author: "who@am.I"
+			}
+		]
+	},
+	{
+		name: "Pentagonal Gem",
+		price: 5.95,
+		description: "Bla Bla",
+		canPurchase: false,
+		soldOut: false,
+		images: [
+			{
+				full: 'link1.jpg',
+				thumb: 'link1.jpg'
+			},
+			{
+				full: 'link2.jpg',
+				thumb: 'link2.jpg'
+			},
+			{
+				full: 'link3.jpg',
+				thumb: 'link3.jpg'
+			}
+		],
+		reviews: [
+			{
+				stars:5,
+				body: "LOVE IT!",
+				author: "who@am.I"
+			},
+			{
+				stars:3,
+				body: "WOW!",
+				author: "who@am.I"
+			},
+			{
+				stars:1,
+				body: "What?",
+				author: "who@am.I"
+			}
+		]
+	}
+]
