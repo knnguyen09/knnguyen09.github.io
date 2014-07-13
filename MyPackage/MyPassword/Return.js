@@ -1,12 +1,5 @@
-function initiate()
-{
-    var returnButton = document.getElementById('Return');
-    returnButton.addEventListener('click', returnToIndex);
-}
-
 function returnToIndex()
 {
     window.location = "../../index.html";
+	return false;
 }
-
-addEventListener("load", initiate);
