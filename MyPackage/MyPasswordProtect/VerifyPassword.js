@@ -6,12 +6,13 @@ function initiate()
 
 function verifyPassword() {
     var password=prompt("Please Enter Password:");
+	var MyLocation = location.pathname;
     if (password == "demo") {
         alert("Welcome to My Home Page!");
-        window.location = "location.host/MyPackage/HomePage/HomePage.html";
+        window.location = "MyLocation/MyPackage/HomePage/HomePage.html";
     }
     else {
-        window.location = "location.host/MyPackage/MyPasswordProtect/WrongPassword.html";
+        window.location = "MyLocation/MyPackage/MyPasswordProtect/WrongPassword.html";
     }
 }
 
