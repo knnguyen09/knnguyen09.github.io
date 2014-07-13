@@ -1,11 +1,5 @@
-function initiate()
-{
-    var EnterSiteButton = document.getElementById('EnterSiteImage');
-    EnterSiteButton.addEventListener('click', verifyPassword);
-}
-
 function verifyPassword() {
-    var password=prompt("Please Enter Password:");
+    var password=prompt("Please Enter Password3:");
     if (password == "demo") {
         alert("Welcome to My Home Page!");
         window.location = "MyPackage/HomePage/HomePage.html";
@@ -15,5 +9,3 @@ function verifyPassword() {
     }
 	return false;
 }
-
-addEventListener("load", initiate);
