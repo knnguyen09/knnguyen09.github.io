@@ -6,7 +6,7 @@ function initiate()
 
 function returnToIndex()
 {
-    window.location = "khangnguyen.info";
+    window.location = "../../index.html";
 }
 
 addEventListener("load", initiate);
