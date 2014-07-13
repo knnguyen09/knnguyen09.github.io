@@ -1,0 +1,47 @@
+body
+{
+    background-image: url(../MyImages/HomePage.jpg);
+    background-size: cover;
+}
+
+.tilt:hover {
+    transform: rotate(-20deg);
+}
+
+.tilt {
+    transition: all 0.2s ease 0s;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.row
+{
+    margin: 15em auto auto 10em;
+}
+
+#footer
+{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #000000;
+    line-height: 2;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #84BAFF;
+    box-shadow: 0 0 15px #00214B
+}
+
+@media screen and (max-width: 50em)
+{
+  .row
+  {
+    margin: 5em 5em 10em auto;
+  }
+}
+
