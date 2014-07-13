@@ -5,7 +5,7 @@ function initiate()
 }
 
 function verifyPassword() {
-    var password=prompt("Please Enter Password:");
+    var password=prompt("Please Enter Password2:");
     if (password == "demo") {
         alert("Welcome to My Home Page!");
         window.location = "http://khangnguyen.info/MyPackage/HomePage/HomePage.html";
