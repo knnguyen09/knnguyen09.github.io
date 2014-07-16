@@ -8,15 +8,25 @@ body
 }
 
 .tilt:hover {
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
     transform: rotate(-20deg);
 }
 
 .tilt {
-    transition: all 0.2s ease 0s;
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+a:-webkit-any-link {
+color: -webkit-link;
+text-decoration: underline;
+cursor: auto;
 }
 
 .row
