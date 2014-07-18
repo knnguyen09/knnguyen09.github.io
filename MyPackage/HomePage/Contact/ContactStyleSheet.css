@@ -56,3 +56,11 @@ a.disabled {
 		margin: 1em 2.5em;
 	}
 }
+
+@media screen and (max-width: 30em)
+{
+	.btn
+	{
+		margin: 5em 2.5em;
+	}
+}
