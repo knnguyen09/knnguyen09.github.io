@@ -24,7 +24,7 @@ a.disabled {
    cursor: default;
 }
 
-.btn
+.btn-danger
 {
 	margin: 1.5em;
 }
@@ -51,7 +51,7 @@ a.disabled {
 	{
 		font-size: 1.3em;
 	}
-	.btn
+	.btn-danger
 	{
 		margin: 1em 2.5em;
 	}
@@ -59,7 +59,7 @@ a.disabled {
 
 @media screen and (max-width: 30em)
 {
-	.btn
+	.btn-danger
 	{
 		margin: 5em 2.5em;
 	}
