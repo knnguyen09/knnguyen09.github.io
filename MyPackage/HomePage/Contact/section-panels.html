@@ -1,0 +1,46 @@
+<section>
+	<ul class="nav nav-pills">
+		<a href="../HomePage.html" class="btn btn-danger btn-xs pull-left">
+			<span class="glyphicon glyphicon-arrow-left"></span>
+		</a>
+		<li ng-class="{ active: panel.isSelected(1) }">
+			<a href ng-click="panel.selectTab(1)" class="disabled">Freelance Opportunities</a>
+		</li>
+		<li ng-class="{ active: panel.isSelected(2) }">
+			<a href ng-click="panel.selectTab(2)" class="disabled">Contract Opportunities</a>
+		</li>
+		<li ng-class="{ active: panel.isSelected(3) }">
+			<a href ng-click="panel.selectTab(3)">Full Time Opportunities</a>
+		</li>
+	</ul>
+	<div class="panel" ng-show="panel.isSelected(1)">
+		<form name="contactForm" ng-controller="ContactFormController as contactFormCtrl" ng-submit="contactForm.$valid && contactFormCtrl.addMessage(message)" novalidate class="form-horizontal" role="form">
+			<div class="form-group has-success has-feedback pull-left">
+				<label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" id="inputSuccess3">
+					<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+				</div>
+			</div>
+			<div class="form-group has-warning has-feedback">
+				<label class="control-label" for="inputWarning2">Input with warning</label>
+				<input type="text" class="form-control" id="inputWarning2">
+				<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+			</div>
+			<div class="form-group has-error has-feedback">
+				<label class="control-label" for="inputError2">Input with error</label>
+				<input type="text" class="form-control" id="inputError2">
+				<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+			</div>
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(2)">
+		<h4>Contract Opportunities</h4>
+		<blockquote>None yet</blockquote>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(3)">
+		<a href="#" class="btn btn-primary btn-lg disabled" role="button">Connect!</a>
+		<a href="#" class="btn btn-default btn-lg disabled" role="button">Request contact info</a>
+	</div>
+</section>

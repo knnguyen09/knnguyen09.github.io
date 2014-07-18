@@ -7,6 +7,28 @@ body
 	background-size: cover;
 }
 
+section
+{
+	color:black;
+	background-color:white;
+	opacity: 1;
+}
+
+li
+{
+	font-size: 2em;
+}
+
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+.btn
+{
+	margin: 1.5em;
+}
+
 #footer
 {
 	position: fixed;
@@ -21,4 +43,16 @@ body
     font-weight: bold;
     text-shadow: 0 1px 0 #84BAFF;
     box-shadow: 0 0 15px #00214B
+}
+
+@media screen and (max-width: 75em)
+{
+	li
+	{
+		font-size: 1.3em;
+	}
+	.btn
+	{
+		margin: 1em 2.5em;
+	}
 }
