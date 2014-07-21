@@ -20,12 +20,6 @@ li
 	font-size: 2em;
 }
 
-.skill-font-size.pull-left.pull-right
-{
-	font-size: 1.2em;
-	font-weight: bold;
-}
-
 .paragraph-header
 {
 	display: inline;
@@ -128,9 +122,9 @@ li
 	{
 		margin-left: 3em;
 	}
-	.skill-font-size.pull-left.pull-right
+	.small-text
 	{
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
 }
 
