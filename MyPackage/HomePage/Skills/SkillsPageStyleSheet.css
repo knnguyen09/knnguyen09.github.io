@@ -110,6 +110,10 @@ li
 	{
 		font-size: 0.4em;
 	}
+	section
+	{
+		margin-bottom: 5em;
+	}
 }
 
 @-moz-document url-prefix() {
