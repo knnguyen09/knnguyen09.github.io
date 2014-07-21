@@ -20,6 +20,11 @@ li
 	font-size: 2em;
 }
 
+.skill-font-size
+{
+	font-size: 2em;
+}
+
 .paragraph-header
 {
 	display: inline;
@@ -90,9 +95,13 @@ li
 	{
 		font-size:1.5em;
 	}
-	.label-default
+	.label
 	{
-		font-size: 0.05em;
+		font-size: 0.5em;
+	}
+	section
+	{
+		margin-bottom: 5em;
 	}
 }
 
