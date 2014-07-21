@@ -1,0 +1,221 @@
+<section class="clearfix">
+	<nav class="navbar navbar-inverse" role="navigation">
+		<a href="../HomePage.html" class="btn btn-info btn-xs pull-left">
+			<span class="glyphicon glyphicon-arrow-left"></span>
+		</a>
+		<li ng-class="{ active: panel.isSelected(1) }">
+			<a href ng-click="panel.selectTab(1)" class="disabled">Programming</a>
+		</li>
+		<p class="paragraph-header">|</p>
+		<li ng-class="{ active: panel.isSelected(2) }">
+			<a href ng-click="panel.selectTab(2)" class="disabled">Database</a>
+		</li>
+		<p class="paragraph-header">|</p>
+		<li ng-class="{ active: panel.isSelected(3) }">
+			<a href ng-click="panel.selectTab(3)">Web Development</a>
+		</li>
+		<p class="paragraph-header">|</p>
+		<li ng-class="{ active: panel.isSelected(4) }">
+			<a href ng-click="panel.selectTab(4)">Software Tools</a>
+		</li>
+		<p class="paragraph-header">|</p>
+		<li ng-class="{ active: panel.isSelected(5) }">
+			<a href ng-click="panel.selectTab(5)">Web Tools</a>
+		</li>
+	</nav>
+	<div class="panel" ng-show="panel.isSelected(1)">
+		<div class="alert alert-success" role="alert">
+			<div class="pull-left"><strong>Java</strong></div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<h4>
+						<span class="sr-only">60% Complete</span>
+						<div class="pull-left">2009</div>
+						<em>3 years</em>
+						<div class="pull-right">2012</div>
+					</h4>
+				</div>
+				<h4>
+					<div class="pull-right">Present</div>
+				</h4>
+			</div>
+		</div>
+		<div class="alert alert-info" role="alert">
+			<div class="pull-left"><strong>Perl</strong></div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info progress-blue-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<h4>
+						<span class="sr-only">60% Complete</span>
+						<div class="pull-left">2009</div>
+						<div class="pull-right">2012</div>
+					</h4>
+				</div>
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+					<h4>
+						<span class="sr-only">40% Complete</span>
+						<em>2 years</em>
+						<div class="pull-right">Present</div>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(2)">
+		<div class="alert alert-warning" role="alert">
+			<div class="pull-left"><strong>SQL</strong></div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger progress-red-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+					<h4>
+						<span class="sr-only">40% Complete</span>
+						<div class="pull-left">2009</div>
+						<div class="pull-right">2011</div>
+					</h4>
+				</div>
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+					<h4>
+						<span class="sr-only">20% Complete</span>
+						<em>1 year</em>
+						<div class="pull-right">2012</div>
+					</h4>
+				</div>
+				<h4>
+					<div class="pull-right">Present</div>
+				</h4>
+			</div>
+		</div>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(3)">
+		<div class="alert alert-success" role="alert">
+			<div class="pull-left"><strong><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></strong></div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					<h4>
+						<span class="sr-only">100% Complete</span>
+						<div class="pull-left">2009</div>
+						<em>5 years</em>
+						<div class="pull-right">Present</div>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="alert alert-info" role="alert">
+			<div class="pull-left"><strong><abbr title="Cascading Style Sheets" class="initialism">CSS</abbr></strong></div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					<h4>
+						<span class="sr-only">100% Complete</span>
+						<div class="pull-left">2009</div>
+						<em>5 years</em>
+						<div class="pull-right">Present</div>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="alert alert-warning" role="alert">
+			<div class="pull-left"><strong><abbr title="JavaScript" class="initialism">JS</abbr></strong></div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning progress-bar-striped progress-orange-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+					<h4>
+						<span class="sr-only">40% Complete</span>
+						<div class="pull-left">2009</div>
+						<div class="pull-right">2011</div>
+					</h4>
+				</div>
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+					<h4>
+						<span class="sr-only">20% Complete</span>
+						<em>1 year</em>
+						<div class="pull-right">2012</div>
+					</h4>
+				</div>
+				<div class="progress-bar progress-bar-warning progress-bar-striped progress-orange-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+					<h4>
+						<span class="sr-only">20% Complete</span>
+						<div class="pull-right">2013</div>
+					</h4>
+				</div>
+				<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+					<h4>
+						<span class="sr-only">20% Complete</span>
+						<em>1 year</em>
+						<div class="pull-right">Present</div>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="alert alert-danger" role="alert">
+			<div class="pull-left"><strong>AngularJS</strong></div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger progress-red-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+					<h4>
+						<span class="sr-only">80% Complete</span>
+						<div class="pull-left">2009</div>
+						<div class="pull-right">2013</div>
+					</h4>
+				</div>
+				<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+					<h4>
+						<span class="sr-only">20% Complete</span>
+						<em>1 year</em>
+						<div class="pull-right">Present</div>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(4)">
+		<h2>
+			<span class="label label-default">JUnit</span>
+			<span class="label label-primary">XML</span>
+			<span class="label label-success">SVN</span>
+			<span class="label label-info">Reg Ex</span>
+			<span class="label label-warning">Eclipse</span>
+			<span class="label label-danger">VIM</span>
+			<span class="label label-default">Notepad++,</span>
+			<span class="label label-primary">WebMatrix 3</span>
+		</h2>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(5)">
+		<table class="table table-striped">
+			<tr class="active">
+				<th>Web-Related</td>
+				<th>Server-Related</td>
+			</tr>
+			<tr>
+				<td>Bootstrap</td>
+				<td>JSON</td>
+			</tr>
+			<tr class="success">
+				<td>Font Awesome</td>
+				<td>GitHub Pages</td>
+			</tr>
+			<tr>
+				<td>Dropbox</td>
+				<td>CDN</td>
+			</tr>
+			<tr class="warning">
+				<td>Bitbucket</td>
+				<td>GoDaddy Domains</td>
+			</tr>
+			<tr>
+				<td>Google Analytics</td>
+				<td>GoDaddy Web Hosting</td>
+			</tr>
+			<tr class="danger">
+				<td>LeafDNS</td>
+				<td>GoDaddy Reseller Hosting</td>
+			</tr>
+			<tr>
+				<td>Pingdom</td>
+				<td>GoDaddy cPanel</td>
+			</tr>
+			<tr class="info">
+				<td>SourceTree</td>
+				<td>Amazon EC2 (Route 53)</td>
+			</tr>
+		</table>
+	</div>
+	<div class="bg-primary">
+		<p><strong><em>This page was last modified on 20 July <span class="underline">2014</span>.</em><strong></p>
+	</div>
+</section>

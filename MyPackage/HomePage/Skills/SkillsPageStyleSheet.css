@@ -7,6 +7,59 @@ body
 	background-size: cover;
 }
 
+section
+{
+	color:black;
+	background-color:white;
+	opacity: 1;
+}
+
+li
+{
+	display: inline;
+	font-size: 2em;
+}
+
+.paragraph-header
+{
+	display: inline;
+	color: #FFFFFF;
+	font-size: 2em;
+}
+
+.btn-info
+{
+	margin: 1em;
+}
+
+.progress
+{
+	margin-left: 7em;
+}
+
+.progress-blue-bar
+{
+	background-color: #FFFFFF;
+	color: #6FBBF5;
+}
+
+.progress-orange-bar
+{
+	background-color: #FFFFFF;
+	color: #FF9933;
+}
+
+.progress-red-bar
+{
+	background-color: #FFFFFF;
+	color: #FF1515;
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
 #footer
 {
 	position: fixed;
@@ -21,4 +74,44 @@ body
     font-weight: bold;
     text-shadow: 0 1px 0 #84BAFF;
     box-shadow: 0 0 15px #00214B
+}
+
+@media screen and (max-width: 75em)
+{
+	li
+	{
+		font-size: 1.3em;
+	}
+	.btn-info
+	{
+		margin: 0.5em;
+	}
+	.paragraph-header
+	{
+		font-size:1.5em;
+	}
+	.label-default
+	{
+		font-size: 0.05em;
+	}
+}
+
+@media screen and (max-width: 30em)
+{
+	.btn-info
+	{
+		margin: 1.5em 2.5em;
+	}
+	.paragraph-header
+	{
+		font-size:1.2em;
+	}
+	.label
+	{
+		font-size: 0.4em;
+	}
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
 }
