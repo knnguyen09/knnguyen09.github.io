@@ -20,9 +20,10 @@ li
 	font-size: 2em;
 }
 
-.skill-font-size
+.skill-font-size.pull-left.pull-right
 {
-	font-size: 2em;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 .paragraph-header
@@ -122,6 +123,14 @@ li
 	section
 	{
 		margin-bottom: 5em;
+	}
+	.progress
+	{
+		margin-left: 3em;
+	}
+	.skill-font-size.pull-left.pull-right
+	{
+		font-size: 0.9em;
 	}
 }
 
