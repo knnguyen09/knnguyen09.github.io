@@ -16,6 +16,11 @@ section
 	
 }
 
+.MyHeader
+{
+	margin-bottom: 1em;
+}
+
 li
 {
 	list-style-type: circle;
