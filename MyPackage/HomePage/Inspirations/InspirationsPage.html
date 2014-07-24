@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app="inspirations" lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta name="description" content="Ken Nguyen's Home Page" />
 		<meta name="keywords" content="Ken Nguyen's Home Pag" />
@@ -44,12 +44,15 @@
 		
 		<title>My Inspirations</title>
     </head>
-    <body>
+    <body ng-controller="InspirationsController as inspirations">
+        <section-panels></section-panels>
 		<div id="footer">
             <p>© 2014 Ken Nguyen</p>
         </div>
 
         <!--Loading js here-->
         <script type="text/javascript" src="../../MyLibrary/angular-1.2.19/angular.min.js"></script> <!--AngularJS-->
+        <script type="text/javascript" src="application.js"></script>
+        <script type="text/javascript" src="directives.js"></script>
     </body>
 </html>

@@ -7,6 +7,29 @@ body
 	background-size: cover;
 }
 
+section
+{
+	color:white;
+	background-color: black;
+	opacity: 0.8;
+	margin-bottom:5em;
+	
+}
+
+li
+{
+	list-style-type: circle;
+}
+
+li a:visited {color:#FFFFFF;}  /* visited link */
+li a:active {color:#FF0000;}  /* selected link */
+li a:hover {color: #FF00FF;}  /* mouse over link */
+
+.btn-default
+{
+	margin: auto 2em auto 2em;
+}
+
 #footer
 {
 	position: fixed;
