@@ -19,6 +19,6 @@ function returnToiPadAirSize()
 function returnToDesktopSize()
 {
 	self.moveTo(0, 0);
-	self.resizeTo(screen.availWidth, screen.availHeight);
+	self.resizeTo(screen.availwidth, screen.availheight);
 	return false;
 }
