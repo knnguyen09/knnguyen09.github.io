@@ -20,11 +20,6 @@ section
 	margin-bottom: 1em;
 }
 
-li
-{
-	list-style-type: circle;
-}
-
 li a:visited {color:#FFFFFF;}  /* visited link */
 li a:active {color:#FF0000;}  /* selected link */
 li a:hover {color: #FF00FF;}  /* mouse over link */
