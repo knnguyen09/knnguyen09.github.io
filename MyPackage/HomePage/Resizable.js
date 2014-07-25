@@ -4,9 +4,9 @@ function returnToiPhone5sSize()
 	var height=560;
 	self.moveTo(0, 0);
 	self.resizeTo(width,height);
-	document.getElementById(iphoneDevice).style.visibility = "hidden";
-		document.getElementById(iPadDevice).style.visibility = "hidden";
-		document.getElementById(iMacDevice).style.visibility = "hidden";
+	document.getElementById("iphoneDevice").style.visibility = "hidden";
+		document.getElementById("iPadDevice").style.visibility = "hidden";
+		document.getElementById("iMacDevice").style.visibility = "hidden";
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
 	{
 		document.getElementById(iphoneDevice).style.display = 'none';
