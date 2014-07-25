@@ -4,6 +4,12 @@ function returnToiPhone5sSize()
 	var height=560;
 	self.moveTo(0, 0);
 	self.resizeTo(width,height);
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+	{
+		document.getElementById(iphoneDevice).style.display = 'none';
+		document.getElementById(iPadDevice).style.display = 'none';
+		document.getElementById(iMacDevice).style.display = 'none';
+	}
 	return false;
 }
 
@@ -13,6 +19,12 @@ function returnToiPadAirSize()
 	var height=500;
 	self.moveTo(0, 0);
 	self.resizeTo(width,height);
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+	{
+		document.getElementById(iphoneDevice).style.display = 'none';
+		document.getElementById(iPadDevice).style.display = 'none';
+		document.getElementById(iMacDevice).style.display = 'none';
+	}
 	return false;
 }
 
@@ -20,11 +32,11 @@ function returnToDesktopSize()
 {
 	self.moveTo(0, 0);
 	self.resizeTo(screen.width, screen.height);
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+	{
+		document.getElementById(iphoneDevice).style.display = 'none';
+		document.getElementById(iPadDevice).style.display = 'none';
+		document.getElementById(iMacDevice).style.display = 'none';
+	}
 	return false;
-}
-
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    document.getElementById(iphoneDevice).style.display = 'none';
-	document.getElementById(iPadDevice).style.display = 'none';
-	document.getElementById(iMacDevice).style.display = 'none';
 }
