@@ -1,7 +1,7 @@
 function verifyPassword() {
     var password=prompt("Password: demo");
     if (password == "demo") {
-        alert("Welcome to My Home Page!");
+        alert("Welcome to My Home Page2!");
 		var myWindow = window.open("MyPackage/HomePage/HomePage.html", "", "width=screen.availwidth, height=screen.availheight");
     }
     else {
