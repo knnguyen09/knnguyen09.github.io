@@ -22,3 +22,9 @@ function returnToDesktopSize()
 	self.resizeTo(screen.width, screen.height);
 	return false;
 }
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    document.getElementById(iphoneDevice).style.display = 'none';
+	document.getElementById(iPadDevice).style.display = 'none';
+	document.getElementById(iMacDevice).style.display = 'none';
+}
