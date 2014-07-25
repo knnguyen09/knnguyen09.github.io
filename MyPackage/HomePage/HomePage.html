@@ -49,9 +49,9 @@
     </head>
     <body>
 		<div id="MobileResponsive" class="container-fluid">
-			<span class="fa fa-mobile" title="iPhone5s size"></span>
-			<span class="fa fa-tablet" title="iPad Air size"></span>
-			<span class="fa fa-desktop" title="Desktop size(Yes, I am an Apple fan)"></span>
+			<span class="fa fa-mobile" title="iPhone5s size" onclick="return returnToiPhone5SSize()"></span>
+			<span class="fa fa-tablet" title="iPad Air size" onclick="return returnToiPadAirSize()"></span>
+			<span class="fa fa-desktop" title="Desktop size(Yes, I am an Apple fan)" onclick="return returnToDesktopSize()"></span>
 			<p class="text-center">&#8594; This website is Mobile Responsive! &#8592;</p>
 		</div>
         <div class="row">
@@ -79,5 +79,8 @@
 		<div id="footer">
             <p>© 2014 Ken Nguyen</p>
         </div>
+		
+		<!--Loading js here-->
+        <script type="text/javascript" src="Resizable.js"></script>
     </body>
 </html>
