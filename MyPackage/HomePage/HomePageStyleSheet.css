@@ -7,6 +7,11 @@ body
 	background-size: cover;
 }
 
+a 
+{
+	color: inherit;
+}
+
 .tilt-left:hover {
 	-webkit-transform: rotate(-20deg);
 	-moz-transform: rotate(-20deg);
