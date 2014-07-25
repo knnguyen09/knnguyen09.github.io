@@ -16,8 +16,8 @@ function returnToiPhone5sSize()
 
 function returnToiPadAirSize()
 {
-    var width=678;
-	var height=500;
+    var width=1024;
+	var height=768;
 	self.moveTo(0, 0);
 	self.resizeTo(width,height);
 	return false;
