@@ -1,6 +1,6 @@
-function returnToiPhone5SSize()
+function returnToiPhone5sSize()
 {
-    var width=320;
+    var width=360;
 	var height=480;
 	self.moveTo((screen.availwidth-width)/2,(screen.availheight-height)/2);
 	self.resizeTo(width,height);
