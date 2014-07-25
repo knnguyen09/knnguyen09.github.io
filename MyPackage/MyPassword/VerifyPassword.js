@@ -1,5 +1,5 @@
 function verifyPassword() {
-    var password=prompt("Please enter 'demo' for Password:\n(Hint: Password is case sensitive)");
+    var password=prompt("Password: demo");
     if (password == "demo") {
         alert("Welcome to My Home Page!");
         window.location = "MyPackage/HomePage/HomePage.html";
