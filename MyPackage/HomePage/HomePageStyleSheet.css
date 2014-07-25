@@ -10,6 +10,7 @@ body
 #MobileResponsive
 {
 	background-color: red;
+	display: inline;
 }
 
 .tilt-left:hover {
