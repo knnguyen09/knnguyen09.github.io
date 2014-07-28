@@ -7,8 +7,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 function returnToiPhone5sSize()
 {
-    var width=340;
-	var height=600;
+    var width=360;
+	var height=560;
 	self.moveTo(0, 0);
 	self.resizeTo(width,height);
 	return false;
