@@ -16,4 +16,11 @@
 			controllerAs: 'panel'
 		};
 	});
+	
+	app.directive('mobilePanels', function(){
+		return{
+			restrict: 'E',
+			templateUrl: '../mobile-panels.html'
+		};
+	});
 })();

@@ -22,6 +22,9 @@
         <meta data-property="og:locality" content="N/A" />
         <meta data-property="og:region" content="N/A" />
         <meta data-property="og:postal-code" content="N/A" />
+		
+		<!--Font Awesome-->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!--favicon-->
         <link rel="apple-touch-icon" sizes="57x57" href="../../MyImages/favicons/apple-touch-icon-57x57.png" />
@@ -45,9 +48,8 @@
 		<title>My Contact</title>
     </head>
     <body ng-controller="ContactController as contact">
-        <div>
-            <section-panels></section-panels>
-        </div>
+		<mobile-panels></mobile-panels>
+		<section-panels></section-panels>
 		<div id="footer">
             <p>© 2014 Ken Nguyen</p>
         </div>
@@ -56,5 +58,6 @@
         <script type="text/javascript" src="../../MyLibrary/angular-1.2.19/angular.min.js"></script> <!--AngularJS-->
         <script type="text/javascript" src="application.js"></script>
         <script type="text/javascript" src="directives.js"></script>
+		<script type="text/javascript" src="../Resizable.js"></script>
     </body>
 </html>
