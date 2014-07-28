@@ -48,17 +48,7 @@
 		<title>My Skills</title>
     </head>
     <body ng-controller="SkillsController as skills">
-		<div style="font-weight: bold; font-size: 1.8em; line-height: 2; color: white;" class="container-fluid">
-			<a id="iphoneDevice" href="#">
-				<span class="fa fa-mobile" title="iPhone5s device" onclick="return returnToiPhone5sSize()"></span>
-			</a>
-			<a id="iPadDevice" href="#">
-				<span class="fa fa-tablet" title="iPad Air device" onclick="return returnToiPadAirSize()"></span>
-			</a>
-			<a id="iMacDevice" href="#">
-				<span class="fa fa-desktop" title="iMac device (Yes, I am an Apple fan)" onclick="return returnToDesktopSize()"></span>
-			</a>
-		</div>
+		<mobile-panels></mobile-panels>
         <section-panels></section-panels>
 		<div id="footer">
             <p>© 2014 Ken Nguyen</p>
@@ -68,5 +58,6 @@
         <script type="text/javascript" src="../../MyLibrary/angular-1.2.19/angular.min.js"></script> <!--AngularJS-->
         <script type="text/javascript" src="application.js"></script>
         <script type="text/javascript" src="directives.js"></script>
+		<script type="text/javascript" src="../Resizable.js"></script>
     </body>
 </html>
