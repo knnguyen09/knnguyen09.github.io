@@ -12,7 +12,6 @@ section
 	color:white;
 	background-color: black;
 	opacity: 0.8;
-	margin-bottom:5em;
 }
 
 .MyHeader
@@ -43,4 +42,20 @@ li a:hover {color: #FF00FF;}  /* mouse over link */
     font-weight: bold;
     text-shadow: 0 1px 0 #84BAFF;
     box-shadow: 0 0 15px #00214B
+}
+
+@media screen and (max-width: 75em)
+{
+	section
+	{
+		margin-bottom:2em;
+	}
+}
+
+@media screen and (max-width: 30em)
+{
+	section
+	{
+		margin-bottom:5em;
+	}
 }
