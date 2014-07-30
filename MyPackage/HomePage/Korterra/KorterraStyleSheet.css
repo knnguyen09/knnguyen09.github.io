@@ -1,0 +1,64 @@
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+#footer
+{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: Blue;
+    line-height: 2;
+    text-align: center;
+    color: White;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #84BAFF;
+    box-shadow: 0 0 15px #00214B
+}
+
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+
+/*
+Please use styles to present the data in a way that is responsive so it adapts to the browser(smartphone/tablet/desktop) that is being used to view it.  
+
+BootStrap 3.1.1 is referenced in this fiddle so you may use its classes to assist you with styling, but you are not limited by it.  If you think another CSS framework will work better or you want to create your own styles, feel free to do that.
+*/
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  width: 25%;
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  width: 33.33%;
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  width: 33.33%;
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+  width: 25%;
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  width: 40%;
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px){
+  width: 53.33%;
+}

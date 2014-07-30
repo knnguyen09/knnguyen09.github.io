@@ -1,0 +1,92 @@
+<section>
+	<ul class="nav nav-pills">
+		<li ng-class="{ active: panel.isSelected(1) }">
+			<a href ng-click="panel.selectTab(1)">View MyList</a>
+		</li>
+		<li ng-class="{ active: panel.isSelected(2) }">
+			<a href ng-click="panel.selectTab(2)" class="disabled">Add to MyList</a>
+		</li>
+		<li ng-class="{ active: panel.isSelected(3) }">
+			<a href ng-click="panel.selectTab(3)">Search MyList</a>
+		</li>
+    </ul>
+	<div class="panel" ng-show="panel.isSelected(1)">
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='workdate'; reverse=!reverse">Date</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='jobid'; reverse=!reverse">Job ID</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='contractor'; reverse=!reverse">Contractor Name</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='phone'; reverse=!reverse">Phone Number</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='typeofwork'; reverse=!reverse">Type of Work</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='mobileid'; reverse=!reverse">Mobile ID</a></div>
+		<div ng-repeat="data in korterra.myData | filter:filter | orderBy:sort:reverse">
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.workdate | date}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.jobid}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.contractor}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.phone}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.typeofwork}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.mobileid}}</div>
+		</div>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(2)">
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='workdate'; reverse=!reverse">Date</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='jobid'; reverse=!reverse">Job ID</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='contractor'; reverse=!reverse">Contractor Name</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='phone'; reverse=!reverse">Phone Number</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='typeofwork'; reverse=!reverse">Type of Work</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='mobileid'; reverse=!reverse">Mobile ID</a></div>
+		<div ng-repeat="data in korterra.myData | filter:filter | orderBy:sort:reverse">
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.workdate | date}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.jobid}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.contractor}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.phone}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.typeofwork}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.mobileid}}</div>
+		</div>
+		<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addInfo(korterra.myData)" novalidate>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.workdate | date}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.jobid}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.contractor}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.phone}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.typeofwork}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.mobileid}}</div>
+			<input ng-model="reviewCtrl.data.typeofwork" type="text" required />
+			<br/>
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+	<div ng-controller="SearchCtrl" class="panel" ng-show="panel.isSelected(3)">
+		<table>
+			<tr>
+				<td align="right">Search :</td>
+				<td><input ng-model="query[queryBy]" /></td>
+			</tr>           
+			<tr>
+				<td align="right">Search By :</td>
+				<td>
+					<select ng-model="queryBy">
+						<option value="$"></option>
+						<option value="jobid">Job ID</option>
+						<option value="contractor">Contractor Name</option>
+						<option value="phone">Phone Number</option>
+						<option value="typeofwork">Type of Work</option>
+						<option value="mobileid">Mobile ID</option>
+					</select>   
+				</td>
+			</tr>
+		</table>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='workdate'; reverse=!reverse">Date</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='jobid'; reverse=!reverse">Job ID</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='contractor'; reverse=!reverse">Contractor Name</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='phone'; reverse=!reverse">Phone Number</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='typeofwork'; reverse=!reverse">Type of Work</a></div>
+		<div class="col-md-2 col-sm-4 col-xs-12"><a href='javascript:void(0)' ng-click="sort='mobileid'; reverse=!reverse">Mobile ID</a></div>
+		<div ng-repeat="data in korterra.myData | filter:filter | orderBy:sort:reverse | filter:query">
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.workdate | date}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.jobid}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.contractor}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.phone}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.typeofwork}}</div>
+			<div class="col-md-2 col-sm-4 col-xs-12">{{data.mobileid}}</div>
+		</div>
+	</div>
+	</div>
+</section>
