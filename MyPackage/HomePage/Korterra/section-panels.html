@@ -4,7 +4,7 @@
 			<a href ng-click="panel.selectTab(1)">View MyList</a>
 		</li>
 		<li ng-class="{ active: panel.isSelected(2) }">
-			<a href ng-click="panel.selectTab(2)" class="disabled">Add to MyList</a>
+			<a href ng-click="panel.selectTab(2)">Add to MyList</a>
 		</li>
 		<li ng-class="{ active: panel.isSelected(3) }">
 			<a href ng-click="panel.selectTab(3)">Search MyList</a>
@@ -41,14 +41,19 @@
 			<div class="col-md-2 col-sm-4 col-xs-12">{{data.typeofwork}}</div>
 			<div class="col-md-2 col-sm-4 col-xs-12">{{data.mobileid}}</div>
 		</div>
-		<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addInfo(korterra.myData)" novalidate>
+		<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addInfo(korterra.myData)">
 			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.workdate | date}}</div>
 			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.jobid}}</div>
 			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.contractor}}</div>
 			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.phone}}</div>
 			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.typeofwork}}</div>
 			<div class="col-md-2 col-sm-4 col-xs-12">{{reviewCtrl.data.mobileid}}</div>
-			<input ng-model="reviewCtrl.data.typeofwork" type="text" required />
+			<input class="col-md-2 col-sm-4 col-xs-12" ng-model="reviewCtrl.data.workdate" type="text" required />
+			<input class="col-md-2 col-sm-4 col-xs-12" ng-model="reviewCtrl.data.jobid" type="text" required />
+			<input class="col-md-2 col-sm-4 col-xs-12" ng-model="reviewCtrl.data.contractor" type="text" required />
+			<input class="col-md-2 col-sm-4 col-xs-12" ng-model="reviewCtrl.data.phone" type="text" required />
+			<input class="col-md-2 col-sm-4 col-xs-12" ng-model="reviewCtrl.data.typeofwork" type="text" required />
+			<input class="col-md-2 col-sm-4 col-xs-12" ng-model="reviewCtrl.data.mobileid" type="text" required />
 			<br/>
 			<input type="submit" value="Submit" />
 		</form>
